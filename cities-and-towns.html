@@ -13,21 +13,21 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">
+        <a href="index.html" style="text-decoration: none;">
             <img class="logo-png" src="./images/logo2.png" alt="">
+            <div class="travels-text">s</div>
         </a>
         <i class="fas fa-bars" id="bars-icon" onclick="activateHamBurgerMenu()"></i>
         <div class="menu-wrapper">
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-li"><a class="nav-a-links" href="index.html">Home</a></li>
-                <li class="nav-li nav-li-destination" id="nav-li-to-hover">Services <i class="fas fa-angle-down"></i>
+                <li class="nav-li nav-li-destination">Services <i class="fas fa-angle-down"></i>
                     <ul class="sub-nav-menu">
                         <a class="nav-a-links" href="things_to_do.html"><li class="nav-li sub-nav-menu-li">Things to do</li></a>
-                        <a class="nav-a-links" href=""><li class="nav-li sub-nav-menu-li">MICE planning</li></a>
-                        <a class="nav-a-links" href=""><li class="nav-li sub-nav-menu-li">Business tours</li></a>
+                        <a class="nav-a-links" href="mice-planning.html"><li class="nav-li sub-nav-menu-li">MICE planning</li></a>
                     </ul>
                 </li>
-                <li class="nav-li nav-li-destination" id="nav-li-to-hover">Destinations <i class="fas fa-angle-down"></i>
+                <li class="nav-li nav-li-destination">Destinations <i class="fas fa-angle-down"></i>
                     <ul class="sub-nav-menu">
                         <a class="nav-a-links" href="top-destination.html"><li class="nav-li sub-nav-menu-li">Top destinations</li></a>
                         <a class="nav-a-links" href="national-parks.html"><li class="nav-li sub-nav-menu-li">National parks</li></a>
@@ -138,7 +138,7 @@
             </div>
         </div> 
         <hr>
-        <div class="copyright-content">&copy; More travels 2022 - All rights reserved.</div>
+        <div class="copyright-content">&copy; More travels <script>document.write(new Date().getFullYear())</script> - All rights reserved.</div>
     </div>
     <script src="index.js"></script>
 </body>

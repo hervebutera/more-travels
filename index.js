@@ -14,10 +14,13 @@ window.addEventListener('scroll', () => {
         
     }
 });
-let i = 0;
-while (i < 2) {
-    document.getElementsByClassName('.nav-li-destination')[i].addEventListener('click', activateHamBurgerMenu());
-    i++;
+if (window.innerWidth <= 850) {
+    document.getElementsByClassName('nav-li-destination')[0].addEventListener('click', () => {
+        document.getElementsByClassName('sub-nav-menu')[0].classList.toggle('sub-nav-clicked');
+    });
+    document.getElementsByClassName('nav-li-destination')[1].addEventListener('click', () => {
+        document.getElementsByClassName('sub-nav-menu')[1].classList.toggle('sub-nav-clicked');
+    }); 
 }
 
 
