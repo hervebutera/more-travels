@@ -23,5 +23,10 @@ if (window.innerWidth <= 850) {
     }); 
 }
 
-
+document.addEventListener("load", () => {
+    const video = document.getElementById('hero-video');
+    if (!video.playing) {
+        video.play();
+    }
+})
 
